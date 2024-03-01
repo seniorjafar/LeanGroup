@@ -1,0 +1,39 @@
+$footer__text:#EF7C00;
+.footers{
+    padding:0 116px;
+
+   .logo__foot{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    .brend__foot{
+        .imgs{
+            margin: 0 24px;
+        }
+    }
+
+   } 
+   .footer__text{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    .foot1{
+        display: grid;
+        gap: 16px;
+    }
+    
+    .foot2{
+        display: grid;
+        gap: 10px;
+        h4{
+            color: $footer__text;
+        }
+
+    }
+    
+    
+   }
+}
+.footers p:hover{
+    color: $footer__text;
+}

@@ -1,0 +1,149 @@
+$textColor: #EF7C00;
+$dark_mode: rgb(39, 50, 75);
+
+
+h1{
+    text-align: center;
+    margin: 40px 0 32px;
+    font-size: 32px;
+    font-weight: 600;
+    big{
+        color: $textColor;
+    }
+}
+
+.compania{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+    &.dark {
+    // Styles for the dark mode navigation
+    background-color: $dark_mode;
+  }
+    .compania__videos {
+      overflow: hidden;
+    }
+
+    .compania__videos .compania__video {
+      max-width: 550px;
+      background-image: url(../../assets/images/video.png);
+      background-repeat: no-repeat;
+      padding: 0 229px;
+      overflow: hidden;
+      img{
+        margin-left: auto;
+        margin-right: auto;
+        margin: 127px 0;
+      }
+    }
+ 
+
+    }
+
+    .compania__text{
+        max-width: 552px;
+        &.dark {
+    // Styles for the dark mode navigation
+    background-color: $dark_mode;
+  }
+        p{
+            width: 100%;
+        }
+    }
+    @media screen and (max-width:1400px) {
+        .compania{
+            padding: 0 30px;
+        }
+    }
+    
+
+
+
+
+.sertifikatlar{
+    display: flex;
+    padding: 0 59px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 88px;
+    .ser-left{
+        margin-right: 30px;
+    }
+    .ser-right{
+        margin-left: 30px;
+    }
+    .sertifikat{
+        .setifikat__img{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 15px;
+            padding: 16px 0;
+
+        }
+        .control{
+            display: grid;
+            justify-content: center;
+        }
+    }
+}
+
+
+
+
+.products{
+    margin: 0 116px;
+    .products__btns{
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        padding: 32px;
+        .btns{
+            color: $textColor;
+            border: 1px solid gray;
+            border-radius: 60px;
+            padding: 12px 20px;
+            background-color: white;
+        }
+        .btns:hover{
+            color: white;
+            background-color: $textColor;
+            border: 1px solid $textColor;
+        }
+    }
+    .product__img{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 16px 0;
+
+    }
+    .product__btn{
+        display: grid;
+        justify-content: center;
+        padding: 32px 0;
+        .btn{
+           color: $textColor;
+            border: 1px solid $textColor;
+            border-radius: 4px;
+            padding: 12px 20px;
+            background-color: white;
+            }
+        .btn:hover{
+            color: white;
+            background-color: $textColor;
+        } 
+        
+    }
+}
+
+
+
+.informatsiya{
+  .informatsiya__form{
+  background-image: url(../../assets/images/bg2.png);
+  }  
+
+
+}

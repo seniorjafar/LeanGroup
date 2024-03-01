@@ -1,0 +1,155 @@
+$nav_textColor: #EF7C00;
+$dark_mode: rgb(39, 50, 75);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+
+.container{
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+//     &.dark {
+//     // Styles for the dark mode container
+//     background-color: $dark_mode;
+//     color: #fff;
+//   }
+
+}
+
+
+.navbars{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 16px 0;
+    align-items: center;
+    gap: 63px;
+
+     &.dark {
+    // Styles for the dark mode navigation
+    background-color: $dark_mode;
+  }
+
+    .logos{
+
+    }
+    .navbar__menu{
+        .nav__menu{
+            display: flex;
+            gap: 16px;
+            
+    //         &.dark {
+    //   // Styles for the dark mode menu items
+    //   color: #fff;
+    // }
+
+        }
+        .nav__menu li:hover{
+            color: $nav_textColor;
+    }
+    @media screen and (max-width: 1073px) {
+        .navbar__menu{
+            gap: 0;
+        }
+        .nav__menu{
+            display: none;
+        }
+        .nav__mobile{
+            display: block;
+        }
+    }
+    .nav__mobile{
+        display: none;
+        width: 30px;
+    }
+    @media screen and (max-width: 1073px) {
+        
+        .nav__mobile{
+            display: block;
+        }
+    }
+    .dark__mode img{
+    height: 25px;
+//     &.dark {
+//     // Styles for the dark mode button
+//     background-color: #000;
+//     color: #fff;
+//   }
+    }
+    .dark__mode img:hover{
+        color: $nav_textColor;
+    }
+
+}
+}
+
+
+
+
+.katalog{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../../assets/images/bg1.jpg);
+    justify-content: space-between;
+    .katalog__text{
+        max-width: 582px;
+        padding: 162px 0 40px 116px;
+        h4{
+
+        }
+        h1{
+            margin-top: 16px;
+            margin-bottom: 16px;
+            text-align: left;
+        }
+        p{
+            margin-bottom: 16px;
+        }
+        .katalog__btn{
+            margin-bottom: 104px;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: 400;
+            font-size: 15px;
+            border: none;
+            color: white;
+            background-color: $nav_textColor;
+        }
+        .control{
+
+        }
+    }
+    .katalog__brend{
+        display: grid;
+        margin:207px 64px 207px;
+        gap: 32px;
+    }
+    @media screen and (max-width: 890px) {
+        .katalog__text{
+            padding: 162px 10px 40px;
+        }
+        .katalog__btn{
+            margin: 0;
+        }
+        .katalog__brend{
+            display: none;
+        }
+    }
+}
+.top{
+    position: relative;
+    bottom: -1700px;
+    .back-to-top{
+    position: absolute;
+    width: 40px;
+    right: 120px;
+}
+}
